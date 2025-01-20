@@ -6,7 +6,8 @@ from discord.ext import commands
 from discord import Intents, app_commands
 import sqlite3
 
-guild_id = 1160150921301463101
+guild_id = # Your ID Here
+secret_key = # Bot Secret Here
 
 # Declare Intents for the Bot
 intents = Intents.default()
@@ -324,4 +325,5 @@ async def find(
     await interaction.response.send_message(embed=embed)
 
 
-client.run("MTE1OTc4MjI4NTA0Njk4MDYzOA.G-wFAw.mdiyBzFp0SOSYe3oTcwB42C3DnKEfJ027J7ZeU")
+
+client.run(secret_key)
